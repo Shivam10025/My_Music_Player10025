@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/mycolor"
+    tools:context=".Player">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="6">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/musicp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Song"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textview3"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_baseline_pause_24" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@+id/button"
+                android:background="@drawable/ic_baseline_skip_next_24" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_toLeftOf="@+id/button"
+                android:background="@drawable/ic_baseline_skip_previous_24" />
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@+id/button2"
+                android:background="@drawable/ic_baseline_fast_forward_24" />
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_toLeftOf="@+id/button3"
+                android:background="@drawable/ic_baseline_fast_rewind_24" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp" />
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/seekbar"
+                android:text="00:00"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="150dp"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/seekbar"
+                android:text="00:00"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="150dp"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
