@@ -24,6 +24,7 @@ public class Player extends AppCompatActivity {
     TextView textView , time , time2;
     static MediaPlayer mediaPlayer;
     int position;
+    // some changes
     ArrayList<File> mysongs;
     Thread updateseekbar , updatseekbar;
     String sname;
